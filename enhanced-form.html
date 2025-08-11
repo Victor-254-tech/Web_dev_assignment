@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Week 2</title>
+    </head>
+    <body>
+
+        <h1>Enhanced HTML Elements</h1>
+        <h2>Definition list</h2>
+        <dl>
+            <dt>MKU</dt>
+            <dd>Mount Kenya University</dd>
+             <dt>JKUAT</dt>
+            <dd>Jommo Kenyatta University of Agriculture & Technology</dd>
+        </dl>
+        <h2> Nested Lists</h2>
+        <ol>
+            <li>Cars
+                <ol type="i">
+                    <li>Audi</li>
+                    <li>Toyota
+                        <ol type="a">
+                            <li>Corolla</li>
+                            <li>Camry</li>
+                            <li>Prius</li>
+                        </ol>
+                    </li>
+                    <li>Nissan</li>
+                </ol>
+            </li>
+            <li>Mountains
+                <ol type="i">
+                    <li>Everest</li>
+                    <li>Kilimanjaro</li>
+                    <li>Elgon</li>
+                </ol>
+            </li>
+        </ol>
+        <h2>Multimedia</h2>
+        <h3>Images</h3>
+        <img src="pexels-cottonbro-6804613.jpg" alt="Developer's Workstation" width="400" height="300">
+        <h3>Audio</h3>
+        <audio controls>
+            <source src="cool_music_mp3.mp3" type="audio/mpeg">
+            Your browser does not support audio playback.
+
+        </audio>
+        <h3>Video</h3>
+        <video width="650" height="500" controls>
+            <source src="seashore_waves.mp4.mp4" type="video/mp4">
+        </video>
+        <h2>Tables</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                  <th>Name</th> 
+                  <th>Gender</th>
+                  <th>Country</th> 
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Victor Kivinda</td>
+                    <td>Male</td>
+                    <td>Kenya</td>
+                </tr>
+                <tr>
+                    <td>Philis Wanjiru</td>
+                    <td>Female</td>
+                    <td>U.S.A</td>
+                </tr>
+
+            </tbody>
+        </table>
+        <h2>Forms</h2>
+        <form action="https://example.com" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <br><br>
+            <label for="email">Email:</label> 
+            <input type="email" id="email" name="email" placeholder="Enter yor email address" required>
+            <br><br>
+             <label for="name">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <br><br>
+
+            <label for="gender">Gender:</label>
+            <input type="radio" id="Male" name="gender" value="Male">Male
+             <input type="radio" id="Female" name="gender" value="Female">Female
+             <br><br>
+
+             <label for="country">Country:</label>
+             <select id="country" name="country">
+                <option value="">--Select Country--</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Uganda">Uganda</option>
+                <option value="Tanzania">Tanzania</option>
+                <option value="Rwanda"*>Rwanda</option>
+
+             </select>
+             <br><br>
+             <label for="comments">Comments</label>
+             <textarea id="comments" named="comments" rows="5" cols="30"></textarea>
+             <br><br>
+             <input type="submit" value="Submit">
+
+        </form>
+
+    </body>
+</html>
+       
